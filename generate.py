@@ -80,11 +80,7 @@ def worker_thread(addresses, lock):
 
 
 if __name__ == "__main__":
-    try:
-        num_threads = int(input("How many threads to use? "))
-    except ValueError:
-        print("Invalid input. Please enter a number.")
-        exit(1)
+    num_threads = 16
     print(f"Threads using: {num_threads}")
     print('To show speed type "speed". To stop type "stop"')
 
